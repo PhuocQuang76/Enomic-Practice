@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+
+
+    <bean id="add1" class="com.example.model.Address">
+        <property name="city" value="Dallas" />
+        <property name="street" value="Lu Feng Cross"/>
+    </bean>
+    <bean id="add2" class="com.example.model.Address">
+        <property name="city" value="Los Angeles" />
+        <property name="street" value="Main"/>
+    </bean>
+    <bean id="add3" class="com.example.model.Address">
+        <property name="city" value="Orange" />
+        <property name="street" value="Beach"/>
+    </bean>
+
+
+    <bean id="item1" class="com.example.model.Item">
+        <property name="itemId" value="01" />
+        <property name="name" value="Candy" />
+        <property name="description" value="Honey dew candy" />
+        <property name="price" value="5.50"/>
+    </bean>
+    <bean id="item2" class="com.example.model.Item">
+        <property name="itemId" value="02" />
+        <property name="name" value="Bread" />
+        <property name="description" value="Cheese white bread" />
+        <property name="price" value="4.95"/>
+    </bean>
+    <bean id="item3" class="com.example.model.Item">
+        <property name="itemId" value="03" />
+        <property name="name" value="Cookie" />
+        <property name="description" value="Coconut light sweet cookie" />
+        <property name="price" value="9.00"/>
+    </bean>
+    <bean id="item4" class="com.example.model.Item">
+        <property name="itemId" value="04" />
+        <property name="name" value="Chocolate" />
+        <property name="description" value="80% Dark Choco" />
+        <property name="price" value="15.10"/>
+    </bean>
+
+
+    <bean id="cus1" class="com.example.model.Customer">
+        <property name="id" value="1" />
+        <property name="name" value="Aileen" />
+        <property name="email" value="Aileen@yahoo.com" />
+<!--        <property name="billingAddress" ref="add1" />-->
+<!--        <property name="shippingAddress" ref="add2" />-->
+    </bean>
+
+    <bean id="cus2" class="com.example.model.Customer">
+        <property name="id" value="2" />
+        <property name="name" value="Micheal" />
+        <property name="email" value="Micheal@yahoo.com" />
+<!--        <property name="billingAddress" ref="add2" />-->
+<!--        <property name="shippingAddress" ref="add3" />-->
+    </bean>
+
+
+    <bean id="order1" class="com.example.model.Order" >
+        <property name="item" ref="item1" />
+        <property name="customer" ref="cus1" />
+    </bean>
+
+    <bean id="order2" class="com.example.model.Order" >
+        <property name="item" ref="item2" />
+        <property name="customer" ref="cus2" />
+    </bean>
+
+<!--    <bean id="cus2" class="com.example.model.Customer">-->
+<!--        <constructor-arg index="0" value="2"/>-->
+<!--        <constructor-arg index="1" value="Micheal"/>-->
+<!--        <constructor-arg index="2" value="Micheal@yahoo.com"/>-->
+<!--        <constructor-arg index="3" ref="add2"/>-->
+<!--        <constructor-arg index="4" ref="add3"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="order1" class="com.example.model.Order" >-->
+<!--        <constructor-arg index="0" value="001"/>-->
+<!--        <constructor-arg index="1" ref="item1"/>-->
+<!--        <constructor-arg index="2" value="5"/>-->
+<!--        <constructor-arg index="3" value="100"/>-->
+<!--        <constructor-arg index="4" ref="cus1"/>-->
+<!--    </bean>-->
+
+
+
+
+
+
+
+</beans>

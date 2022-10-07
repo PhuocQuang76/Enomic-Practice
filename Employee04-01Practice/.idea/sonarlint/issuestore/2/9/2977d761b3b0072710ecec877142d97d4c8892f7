@@ -1,0 +1,16 @@
+
+T
+java:S1854"7Remove this useless assignment to local variable "tax".(Ûı¶8¼Œüª´0
+‚
+java:S4276"`Refactor this code to use the more specialised Functional Interface 'ToDoubleFunction<SalesTxn>'(ÊÌ‹Òüÿÿÿÿ8µÅüª´0
+E
+java:S1481"(Remove this unused "tax" local variable.(Ûı¶8ÀŒüª´0
+i
+java:S1128"GRemove this unused import 'com.example.lamdapractice.SalesTxn09.Buyer'.(¤Èò‘şÿÿÿÿ8¸Åüª´0
+i
+java:S1128"GRemove this unused import 'com.example.lamdapractice.SalesTxn09.State'.(Ş„ïÁşÿÿÿÿ8¸Åüª´0
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8¸Åüª´0
+U
+java:S1128
+"8Remove this unused import 'java.util.function.Supplier'.(†ïÿ‘8¹Åüª´0

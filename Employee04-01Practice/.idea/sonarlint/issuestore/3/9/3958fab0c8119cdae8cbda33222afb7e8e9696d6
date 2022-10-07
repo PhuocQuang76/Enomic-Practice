@@ -1,0 +1,12 @@
+
+[
+java:S18546"@Remove this useless assignment to local variable "footwearList".(ÜØÔŠüÿÿÿÿ
+‚
+java:S4276."`Refactor this code to use the more specialised Functional Interface 'ToDoubleFunction<Clothing>'(µ¸Öûþÿÿÿÿ8 •í¢´0
+Q	java:S125-"<This block of commented-out lines of code should be removed.(Å¤È¢
+J
+java:S1611."/Remove the parentheses around the "c" parameter(µ¸Öûþÿÿÿÿ
+a
+java:S1612."?Replace this lambda with method reference 'Clothing::getPrice'.(µ¸Öûþÿÿÿÿ8¡•í¢´0
+L
+java:S14816"1Remove this unused "footwearList" local variable.(ÜØÔŠüÿÿÿÿ

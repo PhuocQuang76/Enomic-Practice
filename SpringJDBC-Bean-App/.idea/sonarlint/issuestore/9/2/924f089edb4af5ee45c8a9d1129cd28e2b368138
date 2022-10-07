@@ -1,0 +1,10 @@
+
+…
+java:S1192"cDefine a constant instead of duplicating this literal "
+---------------------------------" 4 times.(•Ò©˜øÿÿÿÿ8˜ ŸŞº0
+c
+java:S27894"FEnsure this "Optional" could never be null and remove this null-check.(²Ï’8ãºšŞº0
+0
+java:S1220""Move this file to a named package.
+V
+java:S1612$"@Replace this lambda with method reference 'System.out::println'.(ÑÉÂÇ

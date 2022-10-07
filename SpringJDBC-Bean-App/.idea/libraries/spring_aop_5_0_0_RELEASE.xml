@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="spring-aop-5.0.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-aop-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-aspects-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-beans-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-context-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-context-indexer-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-context-support-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-core-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-expression-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-instrument-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-jcl-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-jdbc-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-jms-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-messaging-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-orm-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-oxm-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-test-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-tx-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-web-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-webflux-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-webmvc-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../java-our-soul-batch-2/spring-framework-5.0.0.RELEASE-dist/spring-websocket-5.0.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/softwares/lombok.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JorHibernate5.6"/>
+	<classpathentry kind="lib" path="/Users/quanghongphuoc/Enomics/practice-programs/jar_files/mysql-connector-java-8.0.30.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

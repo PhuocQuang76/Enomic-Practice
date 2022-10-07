@@ -1,0 +1,9 @@
+
+N
+java:S1602",Remove useless curly braces around statement(â˜Ç–ÿÿÿÿÿ8™Òá±¶0
+b
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(â˜Ç–ÿÿÿÿÿ8™Òá±¶0
+Q
+java:S1128"/Remove this unused import 'com.mongodb.client'.(‡Ž†óþÿÿÿÿ8©Òá±¶0
+K
+java:S1128".Remove this unused import 'org.bson.Document'.(ÙË®“8©Òá±¶0

@@ -1,0 +1,12 @@
+
+c
+java:S1192'"FDefine a constant instead of duplicating this literal "empid" 6 times.(şØıì8ıÒá±¶0
+i
+java:S1192)"GDefine a constant instead of duplicating this literal "deptId" 4 times.(ú÷¬àÿÿÿÿÿ8ıÒá±¶0
+d
+java:S1192("GDefine a constant instead of duplicating this literal "salary" 4 times.(¿ä­¿8şÒá±¶0
+W	java:S125p"<This block of commented-out lines of code should be removed.(˜â8®Óá±¶0
+Z
+java:S1128	"=Remove this unused import 'com.mongodb.client.model.Filters'.(¯¸ÕÏ8³Óá±¶0
+e
+java:S1128"CRemove this unused import 'com.mongodb.client.result.DeleteResult'.(ç“Ùùùÿÿÿÿ8³Óá±¶0

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        p {
+            display: inline-block;
+            width: 100px;
+        }
+        input {
+            width: 150px;
+            height: 25px;
+            margin-top: 5px;
+        }
+        button {
+        	width: 110px;
+        	background-color:blue;
+        	height:30px;
+        	color:yellow;
+        	margin-top: 10px;
+        	margin-right:5px;
+        	
+        }
+        #next {
+        	margin-top: 100px;
+        	display:none;
+        }
+</style>
+<script>
+
+function searchById(){
+	document.getElementById("nextButton").style.display= 'none';
+	document.getElementById("returnResult").innerHTML = "";
+    var inputText=document.getElementById("empId");
+    var empid=inputText.value;
+   
+    var url="http://localhost:8080/hrm/emp-rest/find/"+empid;
+    var xhr  = new XMLHttpRequest();
+
+    xhr.open("GET", url, true);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onload = function() {
+
+    	document.getElementById("empId").value = "";
+    	document.getElementById("name").value = "";
+        document.getElementById("salary").value ="";
+        document.getElementById("deptId").value = "";
+        document.getElementById("mngId").value = "";
+        var emp = JSON.parse(xhr.responseText);
+
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.log(emp);
+            document.getElementById("empId").value = empid;
+            document.getElementById("name").value = emp.name;
+            document.getElementById("salary").value = emp.salary;
+            document.getElementById("deptId").value = emp.deptId;
+            document.getElementById("mngId").value = emp.manager_id;
+        }else{
+            console.error(emp);
+        }
+
+    }
+    xhr.send();
+};
+
+
+function findAll(){
+	document.getElementById("nextButton").style.display= 'block';
+	document.getElementById("returnResult").innerHTML = "";
+	 var index=0;
+	var emps;
+	
+    var url="http://localhost:8080/hrm/emp-rest/all";
+    var xhr  = new XMLHttpRequest();
+	
+    xhr.open("GET", url, true);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onload = function() {
+    	
+    	emps = JSON.parse(xhr.responseText);
+
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.log(emps);
+            
+            document.getElementById("empId").value = emps[0].id;
+           	document.getElementById("name").value = emps[0].name;
+            document.getElementById("salary").value = emps[0].salary;
+            document.getElementById("deptId").value = emps[0].deptId;
+            document.getElementById("mngId").value = emps[0].manager_id;
+            
+            
+           
+           
+        }else{
+            console.error(emp);
+        }
+    }
+  
+    xhr.send();
+    nextItem(emps, index);
+    
+};
+
+
+function deleteById(){
+	document.getElementById("nextButton").style.display= 'none';
+    var inputText=document.getElementById("empId");
+    var empid=inputText.value;
+
+    var url="http://localhost:8080/hrm/emp-rest/delete/"+empid;
+    var xhr  = new XMLHttpRequest();
+
+    xhr.open("DELETE", url, true);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onload = function() {
+    	document.getElementById("returnResult").innerHTML = "";
+    	document.getElementById("empId").value = "";
+    	document.getElementById("name").value = "";
+        document.getElementById("salary").value ="";
+        document.getElementById("deptId").value = "";
+        document.getElementById("mngId").value = "";
+        var returnValue = xhr.responseText;
+
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.log(returnValue);
+           
+            document.getElementById("returnResult").innerHTML = "Employee was deleted successfully.";
+        }else{
+        	document.getElementById("returnResult").innerHTML = "Employee can not be deleted.";
+        }
+
+    }
+    xhr.send();
+};
+
+
+/*     function nextItem(emps, index){
+index++;
+document.getElementById("empId").value = emps[index].id;
+	document.getElementById("name").value = emps[index].name;
+document.getElementById("salary").value = emps[index].salary;
+document.getElementById("deptId").value = emps[index].deptId;
+document.getElementById("mngId").value = emps[index].manager_id;
+}  */
+
+</script>
+
+</head>
+<body>
+
+<h1>EMPLOYEE DISPLAY SEARCH</h1>
+
+    <div style=" width:100%;">
+        <div style="width:30%; float: left; display: inline-block;">
+            <h3 id="returnResult"></h3>
+            <p><b>EMP ID</b></p>
+            <input id="empId" />
+            <br>
+            <p ><b>NAME</b></p>
+            <input id="name"/>
+            <br>
+            <p ><b>SALARY</b></p>
+            <input id="salary"   />
+            <br>
+            <p><b>DEPT_ID</b></p>
+            <input id="deptId"  />
+            <br>
+            <p><b>MNG_ID</b></p>
+            <input id="mngId" />
+            <br>
+           
+
+            <div style="float:left">
+                <button type="button" value="Search" id="b1" onClick="searchById();">FIND BY ID</button>
+                <button type="button" value="Search" id="b1" onClick="findAll();">FIND ALL</button>
+                <button type="button" value="Search" id="b1" onClick="deleteById();">DELETE</button>
+            </div>
+        </div>
+        <div style="width:70%; float: left;">
+            <button  type="button" id="nextButton" onClick="nextItem"> NEXT </button><br>
+           
+        </div>
+    </div>
+
+
+</body>
+</html>
